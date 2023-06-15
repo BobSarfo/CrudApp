@@ -29,7 +29,7 @@ namespace CrudApp.Controllers
             return Ok(people);
         }
 
-        [Route(), HttpGet]
+        [Route(), HttpPost]
         public async Task<IHttpActionResult> Post([FromBody] PersonDto personDto)
         {
 
