@@ -10,7 +10,7 @@ namespace CrudApp.DAL
 {
     public class PersonWebService 
     {
-        public static readonly string url = @"https://localhost:44395/";
+        public static readonly string url = @"https://localhost:44395/api/persons/";
 
 
 
@@ -41,7 +41,8 @@ namespace CrudApp.DAL
             {
                 try
                 {
-                    HttpResponseMessage response = await client.GetAsync(url+id);
+                https://localhost:44395
+                    HttpResponseMessage response = await client.DeleteAsync(url+ id);
                     if (response.IsSuccessStatusCode)
                     {
                         string res = await response.Content.ReadAsStringAsync();

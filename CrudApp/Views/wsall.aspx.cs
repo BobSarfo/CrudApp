@@ -19,7 +19,6 @@ namespace CrudApp.Views
                 personListGrid.DataBind();
 
             }));
-
         }
 
         protected void personListGrid_RowCommand(object sender, GridViewCommandEventArgs e)
