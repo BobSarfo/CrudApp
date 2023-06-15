@@ -20,14 +20,11 @@ namespace CrudApp.Views
                 personListGrid.DataSource = persons;
                 personListGrid.DataBind();
 
-                personListGrid2.DataSource = persons;
-                personListGrid2.DataBind();
-
             }));
 
         }
 
-        protected void personListGrid2_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void personListGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "DeletePerson")
             {

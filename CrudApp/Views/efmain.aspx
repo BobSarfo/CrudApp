@@ -8,13 +8,13 @@
                     <a class="btn btn-primary btn-md"  target="_blank" rel="noopener noreferrer" href="efadd">Add</a>
          </div>
          <div class="col-3">
-                    <a class="btn btn-primary btn-md"  target="_blank" rel="noopener noreferrer" href="efcall">Search</a>
+                    <a class="btn btn-primary btn-md"  target="_blank" rel="noopener noreferrer" href="efsearch">Search</a>
          </div>
          <div class="col-3">
-                    <a class="btn btn-primary btn-md"  target="_blank" rel="noopener noreferrer" href="efcall">List</a>
+                    <a class="btn btn-primary btn-md"  target="_blank" rel="noopener noreferrer" href="efall">List</a>
          </div>
          <div class="col-3">
-                    <a class="btn btn-primary btn-md"  target="_blank" rel="noopener noreferrer" href="efcall">Delete</a>
+                    <a class="btn btn-primary btn-md"  target="_blank" rel="noopener noreferrer" href="efall">Delete</a>
          </div>
      </div>
  </section>

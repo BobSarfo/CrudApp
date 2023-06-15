@@ -5,7 +5,7 @@
             <p>
                 List of Persons
             </p>
-            <asp:GridView ID="personListGrid2" runat="server" AutoGenerateColumns="false" OnRowCommand="personListGrid2_RowCommand">
+            <asp:GridView ID="personListGrid" runat="server" AutoGenerateColumns="false" OnRowCommand="personListGrid2_RowCommand">
                 <Columns>                  
                     <asp:BoundField DataField="FirstName" HeaderText="First Name" />
                     <asp:BoundField DataField="LastName" HeaderText="Last Name" />
