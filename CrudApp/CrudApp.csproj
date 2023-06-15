@@ -115,8 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\efadd.aspx" />
-    <Content Include="Views\webservice.aspx" />
-    <Content Include="Views\efcall.aspx" />
+    <Content Include="Views\efall.aspx" />
+    <Content Include="Views\webmain.aspx" />
+    <Content Include="Views\efmain.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -210,20 +211,27 @@
     <Compile Include="Views\efadd.aspx.designer.cs">
       <DependentUpon>efadd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\webservice.aspx.cs">
-      <DependentUpon>webservice.aspx</DependentUpon>
+    <Compile Include="Views\efall.aspx.cs">
+      <DependentUpon>efall.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\webservice.aspx.designer.cs">
-      <DependentUpon>webservice.aspx</DependentUpon>
+    <Compile Include="Views\efall.aspx.designer.cs">
+      <DependentUpon>efall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\webmain.aspx.cs">
+      <DependentUpon>webmain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\webmain.aspx.designer.cs">
+      <DependentUpon>webmain.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Views\efcall.aspx.cs">
-      <DependentUpon>efcall.aspx</DependentUpon>
+    <Compile Include="Views\efmain.aspx.cs">
+      <DependentUpon>efmain.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\efcall.aspx.designer.cs">
-      <DependentUpon>efcall.aspx</DependentUpon>
+    <Compile Include="Views\efmain.aspx.designer.cs">
+      <DependentUpon>efmain.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

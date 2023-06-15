@@ -20,7 +20,7 @@ namespace CrudApp.DAL
             return false;
         }
 
-        public static async Task<List<Person>> GetPersonsAsync(Person person)
+        public static async Task<List<Person>> GetPersonsAsync()
         {
 
             CrudAppDbContext db = new CrudAppDbContext();

@@ -25,7 +25,7 @@ namespace CrudApp.Views
                 person.Age = personAge;
             }
 
-            this.RegisterAsyncTask(new PageAsyncTask(async cancellationToken =>
+            this.RegisterAsyncTask(new PageAsyncTask(async _ =>
             {
                 var result = await PersonService.AddPersonAsync(person);               
             }));
