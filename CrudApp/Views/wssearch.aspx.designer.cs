@@ -11,43 +11,34 @@ namespace CrudApp.Views
 {
 
 
-    public partial class WebForm8
+    public partial class wssearch
     {
 
         /// <summary>
-        /// inputFName control.
+        /// inputSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox inputFName;
+        protected global::System.Web.UI.WebControls.TextBox inputSearch;
 
         /// <summary>
-        /// inputLName control.
+        /// SearchButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox inputLName;
+        protected global::System.Web.UI.WebControls.Button SearchButton;
 
         /// <summary>
-        /// inputAge control.
+        /// personListGrid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox inputAge;
-
-        /// <summary>
-        /// efAddSubmit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button efAddSubmit;
+        protected global::System.Web.UI.WebControls.GridView personListGrid;
     }
 }

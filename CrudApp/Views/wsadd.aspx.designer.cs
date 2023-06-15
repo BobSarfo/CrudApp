@@ -11,7 +11,7 @@ namespace CrudApp.Views
 {
 
 
-    public partial class WebForm8
+    public partial class WSAdd
     {
 
         /// <summary>

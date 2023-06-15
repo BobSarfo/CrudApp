@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" Async="true" CodeBehind="efall.aspx.cs" Inherits="CrudApp.Views.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"  Async="true" CodeBehind="wsall.aspx.cs" Inherits="CrudApp.Views.wsall" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
    
         <div>

@@ -139,8 +139,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\wsadd.aspx" />
     <Content Include="Views\efadd.aspx" />
+    <Content Include="Views\wsall.aspx" />
     <Content Include="Views\efall.aspx" />
+    <Content Include="Views\wssearch.aspx" />
     <Content Include="Views\efsearch.aspx" />
     <Content Include="Views\webmain.aspx" />
     <Content Include="Views\efmain.aspx" />
@@ -227,12 +230,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\PersonsController.cs" />
+    <Compile Include="DAL\IPersonService.cs" />
     <Compile Include="DAL\PersonService.cs" />
-    <Compile Include="Models\CrudAppDbContext.cs" />
-    <Compile Include="Models\Person.cs" />
+    <Compile Include="DAL\PersonWebService.cs" />
+    <Compile Include="DTOs\GetPersonsResponse.cs" />
+    <Compile Include="DTOs\Response.cs" />
+    <Compile Include="DAL\Models\CrudAppDbContext.cs" />
+    <Compile Include="DAL\Models\Person.cs" />
+    <Compile Include="Views\wsadd.aspx.cs">
+      <DependentUpon>wsadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\wsadd.aspx.designer.cs">
+      <DependentUpon>wsadd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\efadd.aspx.cs">
       <DependentUpon>efadd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,12 +253,26 @@
     <Compile Include="Views\efadd.aspx.designer.cs">
       <DependentUpon>efadd.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\wsall.aspx.cs">
+      <DependentUpon>wsall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\wsall.aspx.designer.cs">
+      <DependentUpon>wsall.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\efall.aspx.cs">
       <DependentUpon>efall.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\efall.aspx.designer.cs">
       <DependentUpon>efall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\wssearch.aspx.cs">
+      <DependentUpon>wssearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\wssearch.aspx.designer.cs">
+      <DependentUpon>wssearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\efsearch.aspx.cs">
       <DependentUpon>efsearch.aspx</DependentUpon>

@@ -1,8 +1,8 @@
 ﻿using CrudApp.DAL;
 using CrudApp.DTOs;
 using CrudApp.Models;
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Web.Http;
 
@@ -12,9 +12,17 @@ namespace CrudApp.Controllers
     public class PersonsController : ApiController
     {
 
+        [Route(), HttpGet]
+        public async Task<IHttpActionResult> GetAll()
+        {
+            List<Person> people = await PersonService.GetPersonsAsync();
+            GetPersonsResponse response = new GetPersonsResponse { data = people };
+
+            return Ok(response);
+        }
 
         [Route("{searchString}"), HttpGet]
-        public async Task<IHttpActionResult> GetAll(string searchString)
+        public async Task<IHttpActionResult> Search(string searchString)
         {
             List<Person> people;
             if (searchString is null)
@@ -25,8 +33,8 @@ namespace CrudApp.Controllers
             {
                 people = await PersonService.SearchPersonAsync(searchString);
             }
-
-            return Ok(people);
+            GetPersonsResponse response = new GetPersonsResponse { data = people };
+            return Ok(response);
         }
 
         [Route(), HttpPost]
@@ -38,7 +46,7 @@ namespace CrudApp.Controllers
             Person person = new Person { Age = personDto.Age, FirstName = personDto.FirstName, LastName = personDto.LastName };
 
             bool result = await PersonService.AddPersonAsync(person);
-
+            
             return Created("/", result);
         }
 
@@ -48,7 +56,7 @@ namespace CrudApp.Controllers
         public async Task<IHttpActionResult> Delete(int id)
         {
             bool succeeded = await PersonService.DeletePersonAsync(id);
-            if (!succeeded) return NotFound();    
+            if (!succeeded) return NotFound();
 
             return Ok();
         }

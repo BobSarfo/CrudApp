@@ -30,7 +30,7 @@ namespace CrudApp.DAL
         public static async Task<List<Person>> SearchPersonAsync(string searchString)
         {
             CrudAppDbContext db = new CrudAppDbContext();
-            return await db.Persons.Where(p => p.FirstName.ToLower().Trim().Equals(searchString.ToLower().Trim()) || p.LastName.Trim().ToLower().Equals(searchString.ToLower().Trim())).ToListAsync();
+            return await db.Persons.Where(p => p.FirstName.ToLower().Trim().Contains(searchString.ToLower().Trim()) || p.LastName.Trim().ToLower().Contains(searchString.ToLower().Trim())).ToListAsync();
         }
 
         public static async Task<bool> DeletePersonAsync(int id)

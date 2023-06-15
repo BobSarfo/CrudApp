@@ -1,6 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="efadd.aspx.cs" Inherits="CrudApp.Views.WebForm8" Async="True" %>
-
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" Async="true" AutoEventWireup="true" CodeBehind="wsadd.aspx.cs" Inherits="CrudApp.Views.WSAdd" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
    <div class="form-group">
         <asp:label runat="server" >First Name</asp:label>
